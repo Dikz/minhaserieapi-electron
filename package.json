@@ -9,5 +9,11 @@
   "author": "Dikz",
   "devDependencies": {
     "electron": "^4.1.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.0",
+    "popper.js": "^1.15.0"
   }
 }

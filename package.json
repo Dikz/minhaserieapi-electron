@@ -1,0 +1,13 @@
+{
+  "name": "minhaserieapi-electron",
+  "version": "1.0.0",
+  "description": "Aplicação pratica com electron utilizando dados de Scrapping.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Dikz",
+  "devDependencies": {
+    "electron": "^4.1.4"
+  }
+}

@@ -4,16 +4,47 @@
   "description": "Aplicação pratica com electron utilizando dados de Scrapping.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "author": "Dikz",
   "devDependencies": {
-    "electron": "^4.1.4"
+    "electron": "^4.1.4",
+    "electron-builder": "^20.39.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.8.1",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.0",
     "popper.js": "^1.15.0"
+  },
+  "build": {
+    "appId": "com.fivecodex.esorteio",
+    "copyright": "DevUp Academy",
+    "artifactName": "${name}-${version}-${os}-${arch}.${ext}",
+    "directories": {
+      "output": "build/${version}/${os}"
+    },
+    "linux": {
+      "category": "com.fivecodex.esorteio",
+      "target": [
+        "tar.gz",
+        "appimage"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable",
+        "zip"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "build/icon.png",
+      "artifactName": "${name}-setup${version}.${ext}",
+      "displayLanguageSelector": true
+    }
   }
 }

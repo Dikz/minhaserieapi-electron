@@ -1,0 +1,27 @@
+.navcontrol {
+    width: 100%;
+    height: 38px;
+    background: #3e3f3a;
+    padding: 6px;
+  }
+  
+  .navcontrol a.nav-button {
+    margin: 0px 1px 0px 1px;
+    padding: 4px 20px 4px 20px;
+  }
+  
+  .h-default:hover {
+    background: rgba(255, 238, 255, 0.2);
+  }
+  
+  .h-red:hover {
+    background: red;
+  }
+  
+  .drag {
+    -webkit-app-region: drag;
+  }
+  
+  .no-drag {
+    -webkit-app-region: no-drag;
+  }

@@ -3,12 +3,45 @@
   <head>
     <meta charset="UTF-8">
     <title>Electron - Minhaserieapi</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"/>
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/animate.css" />
   </head>
   <body>
     
+  <div class="container">
+    <div class="navcontrol drag fixed-top">
+      <h4 class="text-light float-left pl-5">
+        <i class="fas fa-tv mr-2"></i>
+        Minhaserieapi Electron
+      </h4>
+      <span class="text-light float-right no-drag">
+        <a id="min" class="nav-button h-default">
+          <i class="fas fa-minus"></i>
+        </a>
+        <a id="max" class="nav-button h-default">
+          <i class="fas fa-window-maximize"></i>
+        </a>
+        <a id="close" class="nav-button h-red">
+          <i class="fas fa-times"></i>
+        </a>
+      </span>
+    </div>
+  </div>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-6" style="background: #000;">.</div>
+      <div class="col-6" style="background: #888;">.</div>
+    </div>
+  </div>
     
     <script>
+      window.$ = window.JQuery = require("jquery");
       require('./renderer.js')
+      require("./node_modules/bootstrap/dist/js/bootstrap.min.js");
+      require("./node_modules/popper.js/dist/umd/popper.min.js");
     </script>
   </body>
 </html>

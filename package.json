@@ -20,14 +20,14 @@
     "popper.js": "^1.15.0"
   },
   "build": {
-    "appId": "com.fivecodex.esorteio",
+    "appId": "com.devupacademy.minhaserieapi-electron",
     "copyright": "DevUp Academy",
     "artifactName": "${name}-${version}-${os}-${arch}.${ext}",
     "directories": {
       "output": "build/${version}/${os}"
     },
     "linux": {
-      "category": "com.fivecodex.esorteio",
+      "category": "com.devupacademy.minhaserieapi-electron",
       "target": [
         "tar.gz",
         "appimage"

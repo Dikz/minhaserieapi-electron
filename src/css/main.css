@@ -29,3 +29,15 @@
   body::-webkit-scrollbar {
     display: none;
   }
+
+  .content {
+    box-sizing: border-box;
+  }
+
+  .new-card {
+    padding: 0;
+    margin: 4px;
+    width: 32%;
+    cursor: pointer;
+    overflow: hidden;
+  }

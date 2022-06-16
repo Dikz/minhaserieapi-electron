@@ -10,7 +10,7 @@
   },
   "author": "Dikz",
   "devDependencies": {
-    "electron": "^4.1.4",
+    "electron": "^15.5.5",
     "electron-builder": "^20.39.0"
   },
   "dependencies": {
